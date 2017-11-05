@@ -17,7 +17,7 @@ bool isEven(int n)
 int main()
 {
     // Set as CONSTANT for Random number generation
-    int const MIN_NUMBER = 1, MAX_NUMBER = 36;
+    int const MIN_NUMBER = 0, MAX_NUMBER = 36;
     int number;
     int random;
 
@@ -25,7 +25,6 @@ int main()
 
     // Use arrays for player decision
     char gametype[2];
-    char evenodd[2];
 
     // Main Menu Screen
     cout << "Welcome to Roulette!\n\n";
@@ -40,13 +39,7 @@ int main()
     {
         cout << "What number would you like to bet on? ";
         cin >> number;
-        
-        if(number == 00)
-        {
-            number = 37;
-        }
-            
-
+         
         srand(time(NULL));
         random = rand() % (MAX_NUMBER - MIN_NUMBER + 1) + MIN_NUMBER;
 
