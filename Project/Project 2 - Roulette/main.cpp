@@ -15,33 +15,55 @@ bool isEven(int n)
         return false;
 }
 
-int main()
+// displays current balance remaining
+int showBal(int n)
+{
+    cout << fixed << setprecision(2) << showpoint;
+    cout << "You are currently sitting on $" << n << endl;
+}
+
+// function for game to run first time
+int game()
 {
     // constant for the random numbers to be generated
-    int const MIN_NUM = 0, MAX_NUM = 36;
+    int const MIN_NUM = 1, MAX_NUM = 36;
     int num;    // number for input for number gametype
     int rng;    // random number to be generated
+    int bBal;    // beginning balance of player
+    int cBal;   // current balance
 
-    float bet, wins = 0; // bet inputted, total earned/lost
+    float bet; // bet inputted
 
     // array for player decisions (number, even, odd)
-    char gamet[3];
+    char gamet[2];
 
     // display main menu
-    cout << "Welcome to Roulette!\n\n";
-                                                                // balance //
+    cout << "\t\tWelcome to Roulette!\n\n";
+    cout << "=================================================================\n";
+    
+    // player inputs balance to be played
+    cout << "Enter amount of money to be played: $";
+    cin >> bBal;
+    // set balance input set to current balance
+    cBal = bBal;
+    
     // player inputs their money for bet
-    cout << "How much would you like to bet?\n$"; 
+    cout << "\nHow much would you like to bet?\n$"; 
     cin >> bet;
     
-    // player chooses gametype
-    cout << "Betting on a specific number (N), odd numbers(O), or even numbers(E)? ";
+    // select bet type
+    cout << "\nChoose your type of bet:\n";
+    cout << "1. Specific Number\n";
+    cout << "2. Odd Numbers\n";
+    cout << "3. Even Numbers\n";
+    cout << "4. Black Numbers\n";
+    cout << "5. Red Numbers\n";
     cin >> gamet;
 
     // run this if player chose inputted N or n
-    if(!strcmp(gamet,"N")||(!strcmp(gamet,"n")))
+    if(!strcmp(gamet,"1")||(!strcmp(gamet,"1.")))
     {
-        cout << "What number would you like to bet on? ";   // what number to bet on
+        cout << "\nWhat number would you like to bet on? ";   // what number to bet on
         cin >> num;
         
         // random number generator between 0-36
@@ -54,7 +76,7 @@ int main()
     if(num != rng)
     {
         cout << "You lose $" << bet << "\n";
-        wins -= bet;    // add -bet to winnings
+        cBal -= bet;    // add -bet to winnings
     }
     // win
     else
@@ -62,6 +84,9 @@ int main()
         cout << "You win $" << 35*bet << endl;
         wins += 35*bet; // multiply bet times 35 and add to winnings
     }
+        
+    // display current balance
+        showBal(cBal);
     }
     
     // inputs E or e for gametype
@@ -112,11 +137,17 @@ int main()
     }
 
 
-    // final results
+   /* // final results
     if(wins < bet){
         cout << "You lost a total of $" << abs(wins); // absolute value used
     }                                                 // to not show negative
     else
         cout << "You won a total of $" << wins;
+    * */
+}
+
+int main()
+{
+    game();
     return 0;
 }

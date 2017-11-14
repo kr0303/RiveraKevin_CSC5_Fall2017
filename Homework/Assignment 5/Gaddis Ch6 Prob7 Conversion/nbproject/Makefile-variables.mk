@@ -9,19 +9,19 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=Cygwin-Windows
 CND_ARTIFACT_DIR_Debug=dist/Debug/Cygwin-Windows
-CND_ARTIFACT_NAME_Debug=project_2_-_roulette
-CND_ARTIFACT_PATH_Debug=dist/Debug/Cygwin-Windows/project_2_-_roulette
+CND_ARTIFACT_NAME_Debug=gaddis_ch6_prob7_conversion
+CND_ARTIFACT_PATH_Debug=dist/Debug/Cygwin-Windows/gaddis_ch6_prob7_conversion
 CND_PACKAGE_DIR_Debug=dist/Debug/Cygwin-Windows/package
-CND_PACKAGE_NAME_Debug=project2-roulette.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/Cygwin-Windows/package/project2-roulette.tar
+CND_PACKAGE_NAME_Debug=gaddisch6prob7conversion.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/Cygwin-Windows/package/gaddisch6prob7conversion.tar
 # Release configuration
 CND_PLATFORM_Release=Cygwin-Windows
 CND_ARTIFACT_DIR_Release=dist/Release/Cygwin-Windows
-CND_ARTIFACT_NAME_Release=project_2_-_roulette
-CND_ARTIFACT_PATH_Release=dist/Release/Cygwin-Windows/project_2_-_roulette
+CND_ARTIFACT_NAME_Release=gaddis_ch6_prob7_conversion
+CND_ARTIFACT_PATH_Release=dist/Release/Cygwin-Windows/gaddis_ch6_prob7_conversion
 CND_PACKAGE_DIR_Release=dist/Release/Cygwin-Windows/package
-CND_PACKAGE_NAME_Release=project2-roulette.tar
-CND_PACKAGE_PATH_Release=dist/Release/Cygwin-Windows/package/project2-roulette.tar
+CND_PACKAGE_NAME_Release=gaddisch6prob7conversion.tar
+CND_PACKAGE_PATH_Release=dist/Release/Cygwin-Windows/package/gaddisch6prob7conversion.tar
 #
 # include compiler specific variables
 #
