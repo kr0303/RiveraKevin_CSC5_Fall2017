@@ -10,9 +10,10 @@ bool srchArr(int, int[NUM_ELEMENTS]);
 
 int main()
 {
-	int acct[] = { 5658845, 4520125, 7895122, 8777541, 8451277, 1302850,
-					  8080152, 4562555, 5552012, 5050552, 7825877, 1250255,
-				     1005231, 6545231, 3852085, 7576651, 7881200, 4581002 };
+        // possible account numbers from book
+	int acct[] = {5658845, 4520125, 7895122, 8777541, 8451277, 1302850,
+                        8080152, 4562555, 5552012, 5050552, 7825877, 1250255,
+			1005231, 6545231, 3852085, 7576651, 7881200, 4581002};
 
 	int accNum = 0;
 	bool found = true;
@@ -31,11 +32,11 @@ int main()
 }
 
 // function that looks within the array for user input
-bool srchArr(int enteredValue, int lookUpArray[NUM_ELEMENTS] )
+bool srchArr(int z, int x[NUM_ELEMENTS] )
 {
 	for (int i = 0; i < NUM_ELEMENTS; i++)
 	{
-		if (enteredValue == lookUpArray[i])
+		if (z == x[i])
 			return true;
 	}
 
