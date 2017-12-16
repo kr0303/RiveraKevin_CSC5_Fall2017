@@ -1,4 +1,4 @@
 Your results:
-You entered the game with: $ 100
-Your ending balance:       $ 161
-Total earnings:            $  61
+You entered the game with: $ 500
+Your ending balance:       $  30
+Total earnings:            $-470
